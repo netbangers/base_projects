@@ -1,0 +1,248 @@
+/*------------------------------------*\
+	$CONTENT
+\*------------------------------------*/
+/**
+ * CONTENT..................Lo estás leyendo!!
+ * IMPORTS..................Establece los valores iniciales
+ * BASIC_STYLES.............Importamos fuentes de iconos y font-face
+ */
+
+
+
+
+/*------------------------------------*\
+	$IMPORTS
+\*------------------------------------*/
+@import "normalize";
+@import "utility";
+@import "clearfix";
+@import "icons";
+
+
+
+/*------------------------------------*\
+	$VARIABLES
+\*------------------------------------*/
+/**
+ * Fonts
+ */
+$font-arial: Arial, Helvetica, sans-serif;
+
+
+
+
+/*------------------------------------*\
+	$FONT_FACE
+\*------------------------------------*/
+@include fontface("Font Name", 400, "name_file_font", "");
+
+
+
+
+
+/*------------------------------------*\
+	$ICONS_FONT
+\*------------------------------------*/
+[class^="icon__"],
+[class*=" icon__"] {
+	&:before {
+		font-family: "icomoon";
+		speak: none;
+		font-style: normal;
+		font-weight: normal;
+		font-variant: normal;
+		text-transform: none;
+		line-height: 1;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+	$ICONS_SVG
+\*------------------------------------*/
+
+
+
+
+
+
+
+
+/*------------------------------------*\
+	$BASIC_STYLES
+\*------------------------------------*/
+
+html { font-size: 62.5%; }
+
+body {
+	min-width: 300px;
+	font-size: 1em;
+	background-color: #fff;
+}
+
+@include selection() {
+	background-color: #ad172b;
+	color: #ad172b;
+}
+
+@include placeholder() { color: #ad172b; }
+
+input[type=text],
+input[type=password],
+input[type=checkbox],
+input[type=submit],
+input[type=button],
+input[type=reset],
+div[contenteditable=true],
+textarea {
+	&:focus {
+		outline: none
+	}
+}
+
+textarea { resize: none; }
+
+map,
+area { outline: none; }
+
+strong { font-weight: 700; }
+
+.not_scroll { overflow: hidden; }
+
+.is_hidden { display: none; }
+
+.spinner {
+	top: 50%;
+	left: 50%;
+}
+
+/**
+ * Content center
+ */
+.c__center {
+	min-width: 300px;
+	max-width: 1020px;
+	padding: 0 10px;
+	margin: 0 auto;
+}
+
+
+/*------------------------------------*\
+	$CORE_STYLE
+\*------------------------------------*/
+@import "ui_component";
+
+
+
+/*------------------------------------*\
+	$MASTER_PAGE
+\*------------------------------------*/
+
+/**
+ * Header Site
+ */
+.s__header {
+
+}
+
+/**
+ * Footer Site
+ */
+.s__footer {
+
+}
+
+/**
+ * Modal
+ */
+.s__modal_master {
+	display: none;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.8);
+	overflow: auto;
+}
+
+/**
+ * Modal master
+ */
+.s__modal_master {
+	z-index: 9009;
+
+	.s__modal_content {
+		display: none;
+		position: absolute;
+		padding: 15px;
+		top: 50%;
+		left: 50%;
+		background-color: #fff;
+		@include transform(translate(-50%, -50%));
+	}
+}
+
+
+
+
+
+/*------------------------------------*\
+	$PARTIALS
+\*------------------------------------*/
+
+
+
+
+
+
+/*------------------------------------*\
+	$SECTIONS
+\*------------------------------------*/
+
+/**
+ * Home
+ */
+.s__home {
+
+}
+
+
+
+
+
+/*------------------------------------*\
+	$RESPONSIVE
+\*------------------------------------*/
+
+@media screen and (max-width: 800px) {
+
+}
+
+@media screen and (max-width: 640px) {
+
+}
+
+@media screen and (max-width: 320px) {
+
+}
+
+
+
+
+
+
+
+
+
+
+
+

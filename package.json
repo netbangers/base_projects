@@ -1,0 +1,20 @@
+{
+  "name": "Base_projects",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cristhoz/base_projects.git"
+  },
+  "keywords": [
+    "front-end"
+  ],
+  "author": "Cristian E. De la Hoz",
+  "bugs": {
+    "url": "https://github.com/cristhoz/base_projects/issues"
+  },
+  "homepage": "https://github.com/cristhoz/base_projects"
+}
