@@ -1,7 +1,5 @@
 #Base for projects
 It is a base structure for projects, as GruntJS in task management.
 
-##Plugins
-Use:
-
-http://handlebarsjs.com/ 3.0.0
+##Dependecies
+__[Handlebars.js](https://github.com/wycats/handlebars.js/)__ v3.0.0 
