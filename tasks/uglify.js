@@ -13,6 +13,15 @@ module.exports = function(grunt) {
       files: {
         'assets/js/app/app.core-min.js': ['source/js/core/core.js', 'source/js/core/core.extend.js']
       }
+    },
+    app: {
+      options: {
+        sourceMap: true,
+        drop_console: false
+      },
+      files: {
+        'assets/js/app/app.app-min.js': ['source/js/**/*.js']
+      }
     }
   });
 
