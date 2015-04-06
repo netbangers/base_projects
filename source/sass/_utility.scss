@@ -129,7 +129,7 @@
 		font-family: $name;
 		src: url("../fonts/" + $source + ".woff" + $hash) format("woff"),
 		     url("../fonts/" + $source + ".ttf" + $hash) format("truetype");
-		font-weight: unquote($weight);
+		font-weight: $weight;
 		font-style: normal;
 	}
 }
