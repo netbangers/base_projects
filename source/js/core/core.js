@@ -821,6 +821,10 @@
 	 * Take the URL and organizes data taken
 	 * @return {Object} data collected and organized in the URL
 	 */
+		/**
+	 * Take the URL and organizes data taken
+	 * @return {Object} data collected and organized in the URL
+	 */
 	Core.getDataURL = function() {
 		var objDataURL = {
 			href: location.href
@@ -830,7 +834,7 @@
 			var pathname = location.href;
 			pathname = pathname.substring(Core.config.PATH_URL.length + 1, pathname.length);
 			pathname = (/\/$/.test(pathname)) ? pathname.substring(0, pathname.length - 1) : pathname;
-			pathname = pathname.substring(0, pathname.indexOf('#'));
+			pathname = (/[#]/gi.test(pathname)) ? pathname.substring(0, pathname.indexOf('#')) : pathname;
 
 			if(!/^#/.test(pathname)) {
 				if(pathname.length - 1 > 0) {
@@ -980,7 +984,10 @@
 					//console.log(routes[prop], prop);
 				} else if(!pathname && !hash) {
 					//Check if a URL and if the variables received
-					if(prop === '/') {
+					var path_url = Core.config.PATH_URL;
+					path_url = (path_url.charAt(path_url.length) != '/') ? path_url + '/' : path_url;
+
+					if(prop === '/' && path_url === dataURL.href) {
 						_call(routes[prop], {
 							hash: _getHash(),
 							search: _getSearch()
