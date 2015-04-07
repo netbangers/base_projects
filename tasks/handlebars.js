@@ -1,6 +1,6 @@
 module.exports = function(grunt) {
   grunt.config.set('handlebars', {
-    dev: {
+    compile: {
       options: {
         namespace: 'Handlebars.templates',
         processName: function(filePath) {

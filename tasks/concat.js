@@ -2,7 +2,7 @@ module.exports = function(grunt) {
   grunt.config.set('concat', {
     extend: {
       options: {
-        banner: '(function(Core) {\r\'use strict\';',
+        banner: '(function(Core) {\r\'use strict\';\r',
         separator: '\r',
         footer: '})(Core);'
       },
