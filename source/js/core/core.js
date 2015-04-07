@@ -279,11 +279,11 @@
 		return Core.getType(value) === '[object Date]';
 	};
 
-	Core.isDOMStringMap = function() {
+	Core.isDOMStringMap = function(value) {
 		return Core.getType(value) === '[object DOMStringMap]';
 	};
 
-	Core.isNodeList = function() {
+	Core.isNodeList = function(value) {
 		return Core.getType(value) === '[object NodeList]';
 	};
 
