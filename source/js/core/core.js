@@ -821,10 +821,6 @@
 	 * Take the URL and organizes data taken
 	 * @return {Object} data collected and organized in the URL
 	 */
-		/**
-	 * Take the URL and organizes data taken
-	 * @return {Object} data collected and organized in the URL
-	 */
 	Core.getDataURL = function() {
 		var objDataURL = {
 			href: location.href
