@@ -830,6 +830,7 @@
 			var pathname = location.href;
 			pathname = pathname.substring(Core.config.PATH_URL.length + 1, pathname.length);
 			pathname = (/\/$/.test(pathname)) ? pathname.substring(0, pathname.length - 1) : pathname;
+			pathname = pathname.substring(0, pathname.indexOf('#'));
 
 			if(!/^#/.test(pathname)) {
 				if(pathname.length - 1 > 0) {
